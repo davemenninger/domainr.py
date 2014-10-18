@@ -10,7 +10,7 @@ import sys
 #
 # usage: echo "pizza" | ./domain_check.py
 #    or
-#        ./ambigrams.py | ./domain_check.py
+#        ./examples/ambigrams.py | ./domain_check.py
 
 pausetime = 10
 
