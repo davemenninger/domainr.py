@@ -5,7 +5,7 @@ def domainr_search_json(domainname):
 	requesturl = 'https://domainr.com/api/json/search?client_id=python_davemenninger&q='
 	requesturl += domainname
 	request = urllib2.Request(requesturl)
-	request.add_header('User-Agent', 'domainr.py/0.1')
+	request.add_header('User-Agent', 'domainr.py/0.2')
 	opener = urllib2.build_opener()
 	response = opener.open(request).read()
 	objs = json.loads(response)
