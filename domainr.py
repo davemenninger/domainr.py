@@ -2,7 +2,7 @@ import urllib2
 import json
 
 def domainr_search_json(domainname):
-	requesturl = 'https://api.domainr.com/v1/search?client_id=python_davemenninger&q='
+	requesturl = 'https://api.domainr.com/v1/search?client_id={your-mashape-key}&q='
 	requesturl += domainname
 	request = urllib2.Request(requesturl)
 	request.add_header('User-Agent', 'domainr.py/0.2')
